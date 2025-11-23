@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horticultural Crops Uses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #e0f7fa, #fce4ec, #e8f5e9, #fff9c4);
+      background-size: 400% 400%;
+      animation: gradientBackground 15s ease infinite;
+      min-height: 100vh;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(to right, rgb(207, 61, 173), rgb(150, 150, 252));
+      padding: 15px 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-btn {
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      background: linear-gradient(45deg, #2c5f2d, #97bc62);
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 100px auto 50px;
+      padding: 20px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .category-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .category-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #2c5f2d;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2c5f2d;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .uses-list {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    .uses-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .uses-list li::before {
+      content: '🌱';
+      position: absolute;
+      left: 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin-top: 80px;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-btn">🏡 Home</a>
+    <a href="contact.html" class="nav-btn">📞 Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Horticultural Crops & Their Uses</h1>
+
+    <div class="category-grid">
+      <!-- Flowers -->
+      <div class="category-card">
+        <img src="rose.jpeg" alt="Flowers" class="category-image" />
+        <h2>🌺 Flowers</h2>
+        <ul class="uses-list">
+          <li>Ornamental decoration</li>
+          <li>Perfume production</li>
+          <li>Aromatherapy</li>
+          <li>Wedding ceremonies</li>
+          <li>Natural dyes</li>
+        </ul>
+      </div>
+
+      <!-- Vegetables -->
+      <div class="category-card">
+        <img src="tomato.jpg" alt="Vegetables" class="category-image" />
+        <h2>🥦 Vegetables</h2>
+        <ul class="uses-list">
+          <li>Nutritional food source</li>
+          <li>Pickling & preservation</li>
+          <li>Juice extraction</li>
+          <li>Animal feed</li>
+          <li>Medicinal purposes</li>
+        </ul>
+      </div>
+
+      <!-- Fruits -->
+      <div class="category-card">
+        <img src="apple.jpg" alt="Fruits" class="category-image" />
+        <h2>🍎 Fruits</h2>
+        <ul class="uses-list">
+          <li>Fresh consumption</li>
+          <li>Jam & jelly production</li>
+          <li>Alcoholic beverages</li>
+          <li>Vitamin sources</li>
+          <li>Cosmetic ingredients</li>
+        </ul>
+      </div>
+
+      <!-- Nuts -->
+      <div class="category-card">
+        <img src="peanut.jpeg" alt="Nuts" class="category-image" />
+        <h2>🥜 Nuts</h2>
+        <ul class="uses-list">
+          <li>Healthy snacks</li>
+          <li>Nut butter production</li>
+          <li>Bakery ingredients</li>
+          <li>Oil extraction</li>
+          <li>Protein supplements</li>
+        </ul>
+      </div>
+
+      <!-- Plants -->
+      <div class="category-card">
+        <img src="mint.jpeg" alt="Plants" class="category-image" />
+        <h2>🌿 Plants</h2>
+        <ul class="uses-list">
+          <li>Air purification</li>
+          <li>Soil conservation</li>
+          <li>Biofuel production</li>
+          <li>Medicinal herbs</li>
+          <li>Landscaping</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
